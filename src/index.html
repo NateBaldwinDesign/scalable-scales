@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scalable scales style guide</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1 minimum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <div id="tabs">
+          <button class="tab" id="tabDemo">Demo</button>
+          <button class="tab" id="tabStyleGuide">Styles</button>
+        </div>
+        <div id="controls">
+          <div class="formGroup">
+            <div class="labelWrapper">
+              <label for="textScaling">Text scale</label>
+              <span id="textScalingValue">100%</span>
+            </div>
+            <input id="textScaling" type="range" min="50" max="200"/>
+          </div>
+          <div class="formGroup">
+            <div class="labelWrapper">
+              <label for="browserZoom">Zoom</label>
+              <span id="browserZoomValue">100%</span>
+            </div>
+            <input id="browserZoom" type="range" min="50" max="200"/>
+          </div>
+          <button id="reset">Reset</button>
+        </div>
+      </header>
+      <main>
+        <div class="tabPanel" id="tabDemoPanel">
+          <div class="hero">
+            <div class="headline">
+              <h1 class="heroHeading">This is my demo app</h1>
+              <p>Demonstrating adaptive and responsive size and spacing systems.</p>
+            </div>
+            <button class="component-spacious-medium outline">Get started</button>
+          </div>
+          <section>
+            <div class="feature_row">
+              <div class="feature_column">
+                <svg viewBox="0 0 275 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="29" y="30" width="216" height="120" rx="6" fill="var(--Indigo100)" stroke="var(--Indigo600)" stroke-width="4"/>
+                  <rect x="112" y="42" width="50" height="96" rx="6" fill="var(--Indigo200)" stroke="var(--Indigo600)" stroke-width="4"/>
+                  <rect x="124" y="150" width="26" height="24" rx="2" fill="var(--Indigo600)" stroke="var(--Indigo600)" stroke-width="4"/>
+                  <rect x="98" y="173" width="78" height="2" rx="1" fill="var(--Indigo600)" stroke="var(--Indigo600)" stroke-width="2"/>
+                  <path d="M82 41C80.8954 41 80 41.8954 80 43V61C80 62.1046 80.8954 63 82 63C83.1046 63 84 62.1046 84 61V45H100C101.105 45 102 44.1046 102 43C102 41.8954 101.105 41 100 41H82ZM98.4402 62.2687C99.2213 63.0497 100.488 63.0497 101.269 62.2687C102.05 61.4876 102.05 60.2213 101.269 59.4402L98.4402 62.2687ZM80.5858 44.4142L98.4402 62.2687L101.269 59.4402L83.4142 41.5858L80.5858 44.4142Z" fill="var(--Indigo600)"/>
+                  <path d="M175.414 117.586C174.633 116.805 173.367 116.805 172.586 117.586C171.805 118.367 171.805 119.633 172.586 120.414L175.414 117.586ZM191.854 138.854C192.959 138.854 193.854 137.959 193.854 136.854V118.854C193.854 117.75 192.959 116.854 191.854 116.854C190.75 116.854 189.854 117.75 189.854 118.854V134.854H173.854C172.75 134.854 171.854 135.75 171.854 136.854C171.854 137.959 172.75 138.854 173.854 138.854H191.854ZM172.586 120.414L190.44 138.269L193.269 135.44L175.414 117.586L172.586 120.414Z" fill="var(--Indigo600)"/>
+                  </svg>                  
+                <h4>Responsive</h4>
+                <p>Size and space responds to viewport width.</p>
+              </div>
+              <div class="feature_column">
+                <svg viewBox="0 0 275 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_72_44)">
+                  <path d="M45.3231 116.338L91.0904 145.924V191.692L45.3231 162.106V116.338Z" fill="var(--Indigo400)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M91.0906 145.924L136.858 116.338L136.858 162.106L91.0905 191.692L91.0906 145.924Z" fill="var(--Indigo100)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M45.3231 116.338L91.0904 86.7522L136.858 116.338L91.0904 145.924L45.3231 116.338Z" fill="var(--Indigo200)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M136.858 116.338L182.625 145.924V191.692L136.858 162.106V116.338Z" fill="var(--Indigo400)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M182.625 145.924L228.393 116.338L228.393 162.106L182.625 191.692L182.625 145.924Z" fill="var(--Indigo100)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M136.858 116.338L182.625 86.7522L228.392 116.338L182.625 145.924L136.858 116.338Z" fill="var(--Indigo200)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M91.0906 40.985L136.858 70.5711V116.338L91.0906 86.7522V40.985Z" fill="var(--Indigo400)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M136.858 70.5712L182.625 40.9851L182.625 86.7524L136.858 116.338L136.858 70.5712Z" fill="var(--Indigo100)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  <path d="M91.0906 40.985L136.858 11.3989L182.625 40.985L136.858 70.5711L91.0906 40.985Z" fill="var(--Indigo200)" stroke="var(--Indigo600)" stroke-width="4" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_72_44">
+                  <rect width="275" height="195" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                  
+                <h4>Extensible</h4>
+                <p>Supports component size and density options.</p>
+              </div>
+              <div class="feature_column">
+                <svg viewBox="0 0 275 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M85 62H123L123 110.121L104.734 178.29C103.292 183.672 106.486 189.203 111.867 190.645C117.248 192.087 122.779 188.893 124.221 183.512L138.055 131.884L151.889 183.512C153.331 188.893 158.862 192.087 164.243 190.645C169.625 189.203 172.818 183.672 171.376 178.29L153 109.71V62H190C194.971 62 199 57.9706 199 53C199 48.0294 194.971 44 190 44H149H127H85C80.0294 44 76 48.0294 76 53C76 57.9706 80.0294 62 85 62ZM138 38C147.389 38 155 30.3888 155 21C155 11.6112 147.389 4 138 4C128.611 4 121 11.6112 121 21C121 30.3888 128.611 38 138 38Z" fill="var(--Indigo200)" stroke="var(--Indigo600)" stroke-width="4"/>
+                  </svg>                  
+                <h4>Adaptive</h4>
+                <p>Text scale and zoom support for accessibility.</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="row">
+              <h4>Tabular data is configurable</h4>
+            </div>
+            <div class="row">
+              <input type="search" placeholder="Filter..."/>
+              <select id="tableDensity">
+                <option value="compact">Compact</option>
+                <option value="regular">Regular</option>
+                <option value="comfortable">Comfortable</option>
+                <option value="spacious">Spacious</option>
+              </select>
+            </div>
+            <table id="demoTable" class="comfortable">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Title</th>
+                  <th>Title</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>Cell content</td>
+                  <td>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      Edit
+                    </button>
+                    <button class="quiet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h1 class='heroHeading'>Hero headline</h1>
+            <h1>Page heading</h1>
+            <h3>Subheading</h3>
+            <p>Primary long-form content of the interface, which must be legible and readible. This text may be used as descriptive text or long-form copy such as articles and documentation.</p>
+          </section>
+
+          <section class="spaciousGaps">
+            <button class="component-regular-x-small">Button</button>
+            <button class="component-regular-small">Button</button>
+            <button class="component-regular-medium">Button</button>
+            <button class="component-regular-large">Button</button>
+          </section>
+          <section class="spaciousGaps">
+            <button class="component-compact-medum">Button</button>
+            <button class="component-regular-medium">Button</button>
+            <button class="component-comfortable-medium">Button</button>
+            <button class="component-spacious-medium">Button</button>
+          </section>
+          <footer>
+            Demonstration of concepts defined in the talk "Scalable scales that scale" by Nate Baldwin.
+          </footer>
+        </div>
+
+        <div class="tabPanel" id="tabStyleGuidePanel">
+          <section id="typographyBlockWrapper"></section>
+          <section id="spacingBlockWrapper"></section>
+          <section id="componentDemoWrapper"></section>
+        </div>
+      </main>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
